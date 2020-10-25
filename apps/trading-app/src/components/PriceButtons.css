@@ -1,0 +1,56 @@
+.left {
+  left: 0;
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0 100%);
+  background: red;
+}
+
+.right {
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+  background: grey;
+}
+
+.left:hover {
+  background-color: orangered;
+}
+
+.right:hover {
+  background: slategrey;
+}
+
+.container {
+  height: 0;
+  padding-top: 25%;
+  background-color: #000;
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.left,
+.right {
+  height: 100%;
+  width: 55%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 20px;
+  position: absolute;
+  font-family: Helvetica, Arial, sans-serif;
+  cursor: pointer;
+  flex-direction: column;
+}
+
+.price {
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.label {
+    font-weight: lighter;
+    font-stretch: condensed;
+    font-size: smaller;
+}
